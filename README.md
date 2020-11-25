@@ -1,5 +1,4 @@
-# chatbot
-Chatbot for Chib Test
+# Chatbot for Chib Test
 
 Chatbot for whatsapp in Flask and Twilio
 
