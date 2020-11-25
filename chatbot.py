@@ -40,7 +40,7 @@ def hello_world():
         msg.body('''La opción que intentas elegir es incorrecta :(''')
         return str(resp)
 
-    #Leer numero de entrada
+    #Leer número de entrada
     if cache['estatus'] > 1:
         try:
             quantity = float(incoming_msg)
@@ -69,8 +69,7 @@ def hello_world():
             cache['estatus'] = 0
             return str(resp)
 
-        except Exception as e:
-            print(e)
+        except:
             msg.body('''Escribe un número válido, por ejemplo: 100.50''')
             return str(resp)
     return str(resp)
