@@ -2,3 +2,4 @@ Flask==1.1.1
 PyJWT==1.7.1
 requests==2.22.0
 twilio==6.48.0
+gunicorn==20.0.4
