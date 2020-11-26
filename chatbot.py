@@ -7,8 +7,9 @@ app = Flask(__name__)
 cache = {'estatus':0}
 
 @app.route('/bot', methods=['POST'])
-def bot():
+def hello_world():
     incoming_msg = request.values.get('Body', '').lower()
+    print(incoming_msg)
     resp = MessagingResponse()
     msg = resp.message()
 
