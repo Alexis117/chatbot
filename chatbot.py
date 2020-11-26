@@ -8,6 +8,7 @@ cache = {'estatus':0}
 
 @app.route('/bot', methods=['POST'])
 def bot():
+    print(cache)
     incoming_msg = request.values.get('Body', '').lower()
     resp = MessagingResponse()
     msg = resp.message()
