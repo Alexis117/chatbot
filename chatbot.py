@@ -13,8 +13,8 @@ def bot():
     resp = MessagingResponse()
     msg = resp.message()
 
-    #Saludo con cualquier entrada
-    if cache['estatus'] == 0:
+    #Saludo con hola
+    if cache['estatus'] == 0 and 'hola' in incoming_msg:
         cache['estatus'] = 1
         msg.body('''¡Hola! Bienvenido al chatbot de chib, las opciones son las siguientes:\n\n''' +\
             '''>Para convertir de dólar a peso mexicano, escribe 1\n\n'''+\
