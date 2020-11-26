@@ -43,6 +43,7 @@ def bot():
 
     #Leer número de entrada
     if cache['estatus'] > 1:
+        print('entre aqui')
         try:
             quantity = float(incoming_msg)
             if quantity < 0:
