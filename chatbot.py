@@ -72,7 +72,6 @@ def bot():
         except:
             msg.body('''Escribe un número válido, por ejemplo: 100.50''')
             return str(resp)
-    return str(resp)
 
 if __name__ == '__main__':
     app.run(debug=True)
